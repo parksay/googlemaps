@@ -8,7 +8,7 @@
       #map {
         height: 100%;
       }
-      html, body {height: 100%;margin: 0;padding: 0;}
+      html, body {height: 100%; margin: 0; padding: 0;}
     </style>
   </head>
   <body>
@@ -28,7 +28,7 @@
         size 속성은 크기. pixel 단위
         origin이랑 anchor는 모르겠음. 없어도 되긴 함 --%>
         var image = {
-        	    url: 'resources/images/c049-3.png',
+        	    url: 'resources/images/c049-2.png',
         	    // This marker is 20 pixels wide by 32 pixels high.
         	    size: new google.maps.Size(50, 50),
         	    // The origin for this image is (0, 0).

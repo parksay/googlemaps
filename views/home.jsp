@@ -19,14 +19,26 @@
 <li> <a href = "geo3">지오코딩 테스트 세 번째 => 주소 검색하면 좌표를 출력</a> </li>
 <li> <a href = "geo4">지오코딩 테스트 네 번째 => 검색 결과 제한하기(옵션 걸기)</a> </li>
 <li> <a href = "geo5">지오코딩 테스트 다섯 번째 => 두 지점 사이 경로 구하기</a> </li>
+<li> <a href = "geo6">지오코딩 테스트 여섯 번째 => 검색으로 두 지점 사이 경로 구하기</a> </li>
+<li> <a href = "geo7">지오코딩 테스트 일곱 번째 => 경로 구하는 함수 하나로</a> </li>
+
 </ul>
+
 할 거:
 1. 지오코딩-
 	1)주소 검색하면 주소로부터 좌표 받기
 	2)좌표 받아다가 DB에 넣기
 2. 역지오코딩 -
 	1)좌표 받아다가 맵에 넣어주면 주소로 띄워주기
-cood = typeof String(results[0].geometry.location)
-자료형 강제 변환
+자료형 확인
+cood = typeof object
+자료형 강제 변환 - String
+cood = String(results[0].geometry.location)
+자료형 강제 변환 - 숫자
+cood = Number(results[0].geometry.location)
+자료형 강제 변환 - int
+cood = parseInt(object)
+자료형 강제 변환 - float
+cood = parseFloat(object)
 </body>
 </html>

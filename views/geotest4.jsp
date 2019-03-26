@@ -28,11 +28,11 @@ function codeAddress() {
     	'address': address
     	<%-- 이건 아주 엄격하게 그 국가 안에서만 검색하는 듯. KR 즉 한국이 아니면
     	그외 결과는 없는 셈 침. 애초에 가져오질 않음 
-    	
+    		--%>
    		, componentRestrictions: {
     		country: 'KR'
    		}
-   			--%>
+   	
    	}
   	, function(results, status) {
 		if (status == 'OK') {
