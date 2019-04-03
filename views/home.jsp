@@ -22,6 +22,9 @@
 <li> <a href = "geo6">지오코딩 테스트 여섯 번째 => 검색으로 두 지점 사이 경로 구하기</a> </li>
 <li> <a href = "geo7">지오코딩 테스트 일곱 번째 => 경로 구하는 함수 하나로</a> </li>
 <li> <a href = "markclust1">마크 클러스터링 => 기본</a> </li>
+<li> <a href = "locality1">행정구역 뽑아주기</a> </li>
+<li> <a href = "locality2">행정구역 뽑아주는 array 알고리즘</a> </li>
+<li> <a href = "locality3">행정구역 뽑아주는 array 알고리즘</a> </li>
 
 </ul>
 
