@@ -14,7 +14,6 @@ html, body {height: 100%;margin: 0;padding: 0;}
 <script>
 var map;
 var geocoder;
-
 function initMap() {
     geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(-34.397, 150.644);
@@ -24,7 +23,6 @@ function initMap() {
     	    }
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
 }
-
 function codeAddress() {
 	<%-- 맵 필수 변수 말고, 내가 쓸려고 만든 변수들 --%>
 	var arealist = []; <%-- 맵스에 좌표 보내주면 지역 이름 넘겨줄 건데, 그 지역 이름들을 모아서 넣어둘 배열--%>
@@ -49,7 +47,6 @@ function codeAddress() {
 		{lat: -42.734358, lng: 147.501315},
 		{lat: -42.734358, lng: 147.501315},
 		{lat: -43.999792, lng: 170.463352}
-
 	
 	];
     
@@ -61,6 +58,7 @@ function codeAddress() {
 	   		, function(results, status) {
 	   			
 				if (status == 'OK') {
+					console.log('1 - ' + i + coodlist[i]);
 						flag = false;
 					smallflag = false;
 					for( m = 0; m < results[0].address_components.length; m = m +1 ){
@@ -91,7 +89,6 @@ function codeAddress() {
 	   );
 		totalflag = true;
 	}
-
 	var interval = setInterval(function()
 			{
 				if(totalflag)
@@ -110,18 +107,13 @@ function codeAddress() {
  
 </script></head>
 <body>
-
 <div id="map" style="width: 100%; height: 90%;"></div>
-
 <div>
     <input id="address" type="textbox" value="Sydney, NSW">
     <input type="button" value="Encode" onclick="codeAddress()">
 </div>
-
 <div id = "output1"></div>
-
 <div id = "output"></div>
-
 Uncaught TypeError: Cannot set property 'innerHTML' of null 
 이거는 니가 지금 넣으려는 div가 없대. 어따 넣을 건데, 그게 없대.
 </body>
